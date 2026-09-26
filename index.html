@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kode Pos API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Code Pos & Validation</h1>
+    <p>API by <b>Someone</b>.</p>
+
+    <section>
+      <h2>Cari Kode Pos</h2>
+      <div class="search-box">
+        <input id="q" type="text" placeholder="Kelurahan/kode pos 29111" autofocus>
+        <button id="btn">Cari</button>
+      </div>
+      <pre id="out">Hasilnya disini!!</pre>
+    </section>
+
+    <section class="mt">
+      <h2>Validasi Nomor HP</h2>
+      <div class="search-box">
+        <input id="phone" type="text" placeholder="08xxxxxxxxxx">
+        <button id="btnPhone">Cek</button>
+      </div>
+      <pre id="outPhone">Hasilnya disini!!</pre>
+    </section>
+
+    <section class="mt">
+      <h2>Riwayat <span id="countRiwayat"></span></h2>
+      <div id="listRiwayat"></div>
+      <button id="btnHapusAll">Hapus Semua Riwayat</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="database.js"></script>
+</body>
+</html>
